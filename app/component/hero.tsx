@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <section id="hero">
       <div className="w-full h-screen bg-[url(/background.jpg)] bg-cover">
-        <div className="bg-bgPrimary/60 absolute w-full h-screen"></div>
+        <div className="bg-bgPrimary/70 absolute w-full h-screen"></div>
         <div className="w-full h-full flex items-center justify-center">
           {/* <div className="mt-10 z-0"> */}
           {/* card */}
           <div className="w-[230px] h-[240px] rounded-md relative bg-bgSecondary">
             {/* circle */}
-            <div className="absolute z-30 bg-gray-600 top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] w-[230px] h-[230px] rounded-full bg-gray-800/70"></div>
-            <div className="absolute z-40 bg-gray-600 top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] w-[180px] h-[180px] rounded-full border-8 border-gray-500">
+            <div className="absolute z-40 bg-gray-600 top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] w-[230px] h-[230px] rounded-full bg-secondary/60"></div>
+            <div className="absolute z-40 bg-gray-600 top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] w-[180px] h-[180px] rounded-full border-8 border-secondary">
               <img src="/FotoProfile.png" alt="foto" className="rounded-full" />
             </div>
             {/* end */}
