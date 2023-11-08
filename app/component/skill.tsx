@@ -95,9 +95,11 @@ const backend: Backend[] = [
 
 export default function Skill() {
   return (
-    <section id="skills">
-      <div className="w-full h-screen bg-bgPrimary py-10">
-        <h1 className="text-center text-4xl text-primary">Skills</h1>
+    <section id="skills" className="scroll-mt-20">
+      <div className="w-full h-screen dark:bg-bgSecondary bg-secondary py-10 transition-colors duration-500">
+        <h1 className="text-center text-4xl text-primary transition-colors duration-500">
+          Skills
+        </h1>
 
         <div className="grid grid-cols-2 gap-3 mt-10">
           {/* frontend */}
