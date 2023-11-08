@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import Navbar from "./navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
-
+import DarkModeProvider from "./DarkModeProvider";
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin-ext"],
@@ -23,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={poppins.className}>
-        <ToastContainer />
-        <Navbar />
-        {children}
+        <ToastContainer position="top-right" theme="light" />
+        <DarkModeProvider>
+          <Navbar />
+          {children}
+        </DarkModeProvider>
       </body>
     </html>
   );
