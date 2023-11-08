@@ -21,6 +21,10 @@ export default function Navbar() {
       href: "#portfolio",
     },
     {
+      title: "certification",
+      href: "#certification",
+    },
+    {
       title: "contact",
       href: "#contact",
     },
@@ -30,7 +34,7 @@ export default function Navbar() {
       <div className=" flex items-center h-full">
         <div className="ml-5">
           <Link href={"#hero"}>
-            <h1 className="text-4xl text-primary font-normal font-shadow cursor-default">
+            <h1 className="text-4xl text-primary font-normal font-shadow cursor-default hover:scale-105 transition-transform duration-300">
               AW
             </h1>
           </Link>

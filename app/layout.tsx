@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "./navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -21,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={poppins.className}>
+        <ToastContainer />
         <Navbar />
         {children}
       </body>
