@@ -106,12 +106,12 @@ export default function Skill() {
           <div className="text-primary">
             <h1 className="text-center text-2xl">Frontend</h1>
             {/* frontend  skill */}
-            <div className="grid grid-cols-3 gap-10 mt-10">
+            <div className="grid grid-cols-3 gap-5 mt-10">
               {frontend.map((content, key) => {
                 return (
                   <div
                     key={key}
-                    className="flex flex-col justify-center items-center gap-2 group"
+                    className="flex flex-col justify-center items-center gap-1 group"
                   >
                     <Link href={`${content.href}`}>
                       <img
@@ -133,7 +133,7 @@ export default function Skill() {
           <div className="text-primary">
             <h1 className="text-center text-2xl">Backend</h1>
             {/* backend skill */}
-            <div className="grid grid-cols-3 gap-9 mt-7">
+            <div className="grid grid-cols-3 gap-4 mt-7">
               {backend.map((content, key) => {
                 return (
                   <div
