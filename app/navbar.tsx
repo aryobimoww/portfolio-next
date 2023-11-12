@@ -70,8 +70,8 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <div
               className={`${
-                !darkMode && "text-orange-600"
-              } transition-colors duration-700`}
+                !darkMode ? "text-orange-600" : "text-gray-400"
+              } transition-colors duration-500`}
             >
               <BsFillSunFill />
             </div>
@@ -84,13 +84,13 @@ export default function Navbar() {
               <div
                 className={`relative h-4 w-4 ${
                   darkMode ? "ml-6 bg-secondary" : "ml-[6px] bg-white"
-                }  rounded-full  transition-all duration-500`}
+                }  rounded-full  transition-all duration-700`}
               ></div>
             </button>
             <div
               className={`${
-                darkMode && "text-yellow-300"
-              } transition-colors duration-700`}
+                darkMode ? "text-yellow-300" : "text-gray-400"
+              } transition-colors duration-500`}
             >
               <BsFillMoonFill />
             </div>

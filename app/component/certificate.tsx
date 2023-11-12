@@ -59,13 +59,13 @@ export default function Certificate() {
           <img src={lightBox.image} className="w-1/2 h-[480px]" />
         </div>
       </div>
-      <h1 className="text-center text-4xl text-white"> Certification</h1>
-      <div className="grid grid-cols-3 w-full gap-5 mt-10">
+      <h1 className="text-center text-4xl text-primary"> Certification</h1>
+      <div className="grid grid-cols-3 w-full h-full gap-5 items-center">
         {certificationContetn.map((content, key) => {
           return (
             <div
               key={key}
-              className="flex flex-col justify-center items-center gap-3 text-white group"
+              className="flex flex-col justify-center items-center gap-5 text-primary group"
             >
               <div
                 className="w-[280px] cursor-pointer group-hover:scale-110 transition-transform duration-300"
