@@ -45,11 +45,11 @@ export default function Navbar() {
     <div className="h-[64px] w-full sticky left-0 top-0 z-50 bg-white dark:bg-gradient-to-r dark:from-[#232526] dark:to-[#414345] transition-colors">
       <div className=" flex items-center h-full">
         <div className="ml-5">
-          <Link href={"#hero"}>
+          <a href={"#hero"}>
             <h1 className="text-4xl text-secondary dark:text-primary font-normal font-shadow cursor-default hover:scale-105 transition-all duration-300">
               AW
             </h1>
-          </Link>
+          </a>
         </div>
         <div className="flex w-full h-full justify-end items-center text-secondary dark:text-primary text-lg gap-10 mr-12 transition-colors">
           {navItems.map((item, key) => {
@@ -58,20 +58,20 @@ export default function Navbar() {
                 key={key}
                 className="h-full flex items-center group z-0 relative"
               >
-                <Link href={item.href}>
+                <a href={item.href}>
                   <span className="absolute bottom-0 left-0 w-0 h-1 z-10 group-hover:w-full group-hover:h-1 bg-secondary transitiion-all duration-500"></span>
                   <p className="capitalize dark:group-hover:text-white group-hover:text-secondary/60 transition-colors duration-300">
                     {item.title}
                   </p>
-                </Link>
+                </a>
               </div>
             );
           })}
           <div className="flex items-center gap-2">
             <div
               className={`${
-                !darkMode && "text-orange-600"
-              } transition-colors duration-700`}
+                !darkMode ? "text-orange-600" : "text-gray-400"
+              } transition-colors duration-500`}
             >
               <BsFillSunFill />
             </div>
@@ -84,13 +84,13 @@ export default function Navbar() {
               <div
                 className={`relative h-4 w-4 ${
                   darkMode ? "ml-6 bg-secondary" : "ml-[6px] bg-white"
-                }  rounded-full  transition-all duration-500`}
+                }  rounded-full  transition-all duration-700`}
               ></div>
             </button>
             <div
               className={`${
-                darkMode && "text-yellow-300"
-              } transition-colors duration-700`}
+                darkMode ? "text-yellow-300" : "text-gray-400"
+              } transition-colors duration-500`}
             >
               <BsFillMoonFill />
             </div>

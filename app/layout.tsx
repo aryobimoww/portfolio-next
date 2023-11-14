@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
 import DarkModeProvider from "./DarkModeProvider";
+import Script from "next/script";
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin-ext"],
