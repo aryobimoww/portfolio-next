@@ -42,7 +42,7 @@ export default function Certificate() {
   return (
     <section
       id="certification"
-      className="w-full h-screen bg-secondary dark:bg-bgSecondary py-10 transition-colors duration-500"
+      className="w-full h-screen bg-secondary dark:bg-bgSecondary py-10 transition-colors duration-500 scroll-mt-10"
     >
       <div
         className={`fixed left-0 top-0 w-full h-full z-50 ${

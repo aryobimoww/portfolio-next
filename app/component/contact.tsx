@@ -30,7 +30,7 @@ export default function Contact() {
       <h1 className="text-4xl text-center dark:text-primary text-secondary transition-colors duration-500">
         Contact me
       </h1>
-      <div className="text-primary flex justify-center mt-5">
+      <div className="text-primary h-full flex justify-center items-center mt-5">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="dark:bg-bgSecondary bg-secondary md:w-1/3 w-10/12 transition-colors duration-500"
@@ -60,7 +60,7 @@ export default function Contact() {
               <p>Messages</p>
               <textarea
                 {...register("messages")}
-                className="w-full text-black dark:text-white ps-2 pe-6 items-start"
+                className="w-full text-black dark:text-white ps-2 pe-6 items-start h-16"
               />
               {/* <input
                 {...register("messages")}
